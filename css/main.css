@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+--DesaturatedRed: hsl(0, 36%, 70%);
+--SoftRed: hsl(0, 93%, 68%);
+
+
+--DarkGrayishRed: hsl(0, 6%, 24%);
+
+
+--Linear1: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+--Linear2: linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: var(--Linear2);
+}
