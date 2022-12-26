@@ -1,26 +1,136 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
-:root{
---DesaturatedRed: hsl(0, 36%, 70%);
---SoftRed: hsl(0, 93%, 68%);
+:root {
+    --DesaturatedRed: hsl(0, 36%, 70%);
+    --SoftRed: hsl(0, 93%, 68%);
 
 
---DarkGrayishRed: hsl(0, 6%, 24%);
-
-
---Linear1: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
---Linear2: linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+    --DarkGrayishRed: hsl(0, 6%, 24%);
 }
 
-body{
+body {
     font-family: 'Josefin Sans', sans-serif;
-    background-color: var(--Linear2);
+    background-image: linear-gradient(135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%));
+
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 250px 320px;
+}
+
+.main__logo{
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+.main__img{
+    grid-area: 2/1/3/2;
+}
+
+.main__info{
+    grid-area: 3/1/4/2;
+    align-self: center;
+    text-align: center;
+}
+
+
+.main__logo span{
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    background-image: url('../images/logo.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 30px;
+    left: 20px;
+}
+
+.main__img{
+    background-image: url('../images/hero-desktop.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: var(--DesaturatedRed);
+    font-size: 4rem;
+    font-weight: 300;
+    padding: 10px 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+h1 span{
+    color: var(--DarkGrayishRed);
+}
+
+p{
+    font-size: 1.4rem;
+    padding: 10px 13px;
+    color: var(--DesaturatedRed);
+}
+
+.main__submit{
+    height: 40px;
+    margin: 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--SoftRed);
+    border-radius: 15px;
+    border-right: none;
+}
+
+input[type='email']{
+    padding-left: 10px;
+    border-radius: 15px;
+    height: 100%;
+    width: 70%;
+    border: none;
+    font-size: 1.4rem;
+    outline: none;
+}
+
+.boton__submit{
+    justify-self: flex-end;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid #f8bfbf;
+    width: 55px;
+    height: 100%;
+    position: relative;
+    background-image: linear-gradient(to right top, #f8bfbf, #f6b2b2, #f4a6a5, #f19999, #ee8c8c);
+}
+
+.boton__submit span{
+    position: absolute;
+    left: calc(50% - 7px);
+    top: calc(50% - 7px);
+    width: 15px;
+    height: 15px;
+    background-image:url('../images/icon-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boton__submit:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px rgb(171, 170, 170);
+}
+
+.main__info--error{
+    display: none;
 }

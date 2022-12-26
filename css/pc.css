@@ -1,0 +1,42 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 250px 320px;
+}
+
+.main__logo{
+    grid-area: 1/1/2/2;
+    position: relative;
+}
+
+.main__img{
+    grid-area: 1/2/4/3;
+}
+
+.main__info{
+    grid-area: 2/1/4/2;
+    align-self: center;
+    text-align: start;
+    padding: 0 80px;
+}
+
+.main__logo span{
+    width: 130px;
+    height: 40px;
+    top: 30px;
+    left: 80px;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+p{
+    font-size: 1.8rem;
+    padding: 20px 100px 20px 20px;
+
+}
+
+.boton__submit{
+    width: 70px;
+}

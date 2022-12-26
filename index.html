@@ -13,27 +13,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/pc.css" media="(min-width:900px">
 
 </head>
 <body>
 
-  <main>
+  <main class="main">
 
     <div class="main__logo">
       <span></span>
     </div>
 
-    <div class="main__img">
-
-    </div>
+    <div class="main__img"></div>
 
     <div class="main__info">
-      <h1>We're coming soon</h1>
+      <h1>We're <span><strong>coming soon</strong></span></h1>
       <p>Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      <section>
+      <section class="main__submit">
         <input type="email" placeholder="Email Address">
-        <button></button>
+        <button class="boton__submit"><span></span></button>
+        <span class="main__info--error"></span>
       </section>
     </div>
 
