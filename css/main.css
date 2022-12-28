@@ -132,5 +132,21 @@ input[type='email']{
 }
 
 .main__info--error{
+   align-self: center;
+   width: 20px;
+   height: 20px;
+   background-image: url('../images/icon-error.svg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.pError{
+    padding-top: 6px;
+    color: rgb(255, 0, 0);
+    font-size: 1.3rem;
+}
+
+.inactive{
     display: none;
 }
